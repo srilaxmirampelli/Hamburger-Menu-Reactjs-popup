@@ -1,0 +1,25 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.mobile-home-image {
+  width: 600px;
+  height: 500px;
+}
+.desktop-home-image {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .desktop-home-image {
+    width: 900px;
+    height: 600px;
+    display: flex;
+  }
+  .mobile-home-image {
+    display: none;
+  }
+}
